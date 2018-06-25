@@ -33,8 +33,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+            <state relative-caret-position="640">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -76,6 +76,7 @@
       <find>active</find>
       <find>gsdk</find>
       <find>tra</find>
+      <find>fixed</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Dan Balarin\AppData\Roaming\Pub\Cache\hosted\pub.dartlang.org\angular_router-1.0.2\lib\src</dir>
@@ -252,7 +253,7 @@
       <workItem from="1529504414276" duration="22659000" />
       <workItem from="1529697336492" duration="12997000" />
       <workItem from="1529859194589" duration="10069000" />
-      <workItem from="1529940603528" duration="14242000" />
+      <workItem from="1529940603528" duration="14582000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1529958081533</created>
@@ -265,7 +266,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60628000" />
+    <option name="totallyTimeSpent" value="60968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="853" height="1047" extended-state="0" />
@@ -315,13 +316,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/src/raid/raid.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="97" selection-start-line="30" selection-start-column="97" selection-end-line="30" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/raid/raid_definitions.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2783">
@@ -682,10 +676,18 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        <state relative-caret-position="640">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
