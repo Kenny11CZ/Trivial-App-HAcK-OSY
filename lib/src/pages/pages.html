@@ -1,0 +1,62 @@
+<h2>Pages</h2>
+<h3>Calculator</h3>
+<form>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Page size</label>
+            <input type="number" class="form-control" [(ngModel)]="pageSize" (ngModelChange)="calculate()">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Size of logical address</label>
+            <input type="number" class="form-control" [(ngModel)]="logAddressSize" (ngModelChange)="calculate()">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Size of physical address</label>
+            <input type="number" class="form-control" [(ngModel)]="physAddressSize" (ngModelChange)="calculate()">
+        </div>
+    </div>
+</form>
+
+<form>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Offset</label>
+            <input type="text" class="form-control" value="{{offsetSize}}" readonly disabled>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Page number(log)</label>
+            <input type="text" class="form-control" value="{{pageNumber}}" readonly disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Frame number(phys)</label>
+            <input type="text" class="form-control" value="{{frameNumber}}" readonly disabled>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Number of pages (INVERTED)</label>
+            <input type="text" class="form-control" value="{{pageNumberInverted}}" readonly disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Number of pages (CLASSICAL)</label>
+            <input type="text" class="form-control" value="{{pageNumberClassical}}" readonly disabled>
+        </div>
+    </div>
+</form>
+
+<h3>Answers</h3>
+<div class="answers row">
+    <div class="panel-group col-md-6 " id="accordion-good">
+        <pages-category *ngFor="let category of goodCategories" [category]="category"></pages-category>
+    </div>
+    <div class="panel-group col-md-6 " id="accordion-bad">
+        <pages-category *ngFor="let category of badCategories" [category]="category"></pages-category>
+    </div>
+    <!--<ul class="col-md-6 bad">-->
+        <!--<li class="alert alert-danger" *ngFor="let badAnswer of badAnswers">{{badAnswer}}</li>-->
+    <!--</ul>-->
+</div>

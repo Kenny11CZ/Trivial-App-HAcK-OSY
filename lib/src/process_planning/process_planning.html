@@ -1,0 +1,23 @@
+<h2>Process planning</h2>
+
+<form>
+    <input class="form-control" [(ngModel)]="timePerWindow" type="number" value="{{timePerWindow}}">
+    <input class="form-control" [(ngModel)]="availableThreads" type="number" value="{{availableThreads}}">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Priority</th>
+                <th>Number of threads</th>
+                <th>Est. time</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let row of rows; let i = index; trackBy:trackByFn">
+            <td><input class="form-control" [(ngModel)]="rows[i].priority" type="number" placeholder="{{row.priority}}"></td>
+            <td><input class="form-control" [(ngModel)]="rows[i].threadCount" type="number" placeholder="{{row.threadCount}}"></td>
+            <td><input class="form-control" [(ngModel)]="rows[i].time" type="number" placeholder="{{row.time}}"></td>
+        </tr>
+    </table>
+</form>
+
+<button type="button" class="btn btn-primary" (click)="addRow()">Add row</button>
+<button type="button" class="btn btn-success" (click)="calculate()">Calculate</button>

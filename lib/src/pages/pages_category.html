@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-target="#{{category.id}}" href="#{{category.id}}" data-toggle="collapse">
+                {{category.title}}
+            </a>
+        </h4>
+    </div>
+    <div id="{{category.id}}" class="panel-collapse collapse" [attr.data-parent]="'#'+category.parentId">
+        <ul class="bad">
+            <li class="alert alert-{{category.cls}}" *ngFor="let answer of category.answers">{{answer}}</li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+<h2>RAID calculator</h2>
+<form>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label for="raidType">Raid type</label>
+            <select class="form-control" id="raidType" [(ngModel)]="selectedRaidType" (ngModelChange)="calculate()">
+                <option *ngFor="let type of raidTypes" [ngValue]="type">{{type.name}}</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Disc capacity</label>
+            <input type="number" class="form-control" [(ngModel)]="discCapacity" (ngModelChange)="calculate()">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Disc count</label>
+            <input type="number" class="form-control" [(ngModel)]="discCount" (ngModelChange)="calculate()">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Disc speed</label>
+            <input type="number" class="form-control" [(ngModel)]="discSpeed" (ngModelChange)="calculate()">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Bus speed</label>
+            <input type="number" class="form-control" [(ngModel)]="busSpeed" (ngModelChange)="calculate()">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>User load</label>
+            <input type="number" class="form-control" [(ngModel)]="userLoad" (ngModelChange)="calculate()">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="multiplier">Multiplier</label>
+            <select class="form-control" id="multiplier" [(ngModel)]="multiplier" (ngModelChange)="calculate()">
+                <option *ngFor="let multiplier of multipliers" [ngValue]="multiplier">{{multiplier}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>MTFB</label>
+            <input type="number" class="form-control" [(ngModel)]="mtfb" (ngModelChange)="calculate()">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Months</label>
+            <input type="number" class="form-control" [(ngModel)]="months" (ngModelChange)="calculate()">
+        </div>
+    </div>
+</form>
+
+<form>
+    <div class="row">
+        <div class="col">
+            <div class="form-group col-md-6">
+                <label>Capacity</label>
+                <input type="text" class="form-control" value="{{capacity}}" readonly disabled>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Read speed</label>
+            <input type="text" class="form-control" value="{{readSpeed}}" readonly disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Write speed</label>
+            <input type="text" class="form-control" value="{{writeSpeed}}" readonly disabled>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Durability min (max)</label>
+            <input type="text" class="form-control" value="{{durability}}" readonly disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Restore time</label>
+            <input type="text" class="form-control" value="{{restoreTime}}" readonly disabled>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Reliability</label>
+            <input type="text" class="form-control" value="{{reliability}}" readonly disabled>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,68 @@
+<h2>Disc speed</h2>
+<form>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Data size</label>
+            <input type="number" class="form-control" [(ngModel)]="dataSize" (ngModelChange)="calculate()">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Cylinder count</label>
+            <input type="number" class="form-control" [(ngModel)]="cylinderCount" (ngModelChange)="calculate()">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Header count</label>
+            <input type="number" class="form-control" [(ngModel)]="headerCount" (ngModelChange)="calculate()">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Sector size</label>
+            <input type="number" class="form-control" [(ngModel)]="sectorSize" (ngModelChange)="calculate()">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Disc RPM</label>
+            <input type="number" class="form-control" [(ngModel)]="rpm" (ngModelChange)="calculate()">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Average sectors per cylinder</label>
+            <input type="number" class="form-control" [(ngModel)]="averageSectorsPerCylinder" (ngModelChange)="calculate()">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Average header wait time</label>
+            <input type="number" class="form-control" [(ngModel)]="averageHeaderWaitTime" (ngModelChange)="calculate()">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Next cylinder wait time</label>
+            <input type="number" class="form-control" [(ngModel)]="nextCylinderWaitTime" (ngModelChange)="calculate()">
+        </div>
+    </div>
+</form>
+
+<form>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>First cylinder read time</label>
+            <input type="text" class="form-control" value="{{firstCylinder}}" readonly disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Total time (ms)</label>
+            <input type="text" class="form-control" value="{{totalTime}}" readonly disabled>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Sector count</label>
+            <input type="text" class="form-control" value="{{sectorCountForData}}" readonly disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Cylinder count</label>
+            <input type="text" class="form-control" value="{{cylinderCountForData}}" readonly disabled>
+        </div>
+    </div>
+</form>
