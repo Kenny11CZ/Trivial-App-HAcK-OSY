@@ -1,10 +1,23 @@
+<<<<<<< HEAD
+=======
+# See https://www.dartlang.org/guides/libraries/private-files
+
+>>>>>>> 591f9cea722396e873f2232955611c0efc0379de
 # Files and directories created by pub
 .dart_tool/
 .packages
 .pub/
 build/
+<<<<<<< HEAD
 # Remove the following pattern if you wish to check in your lock file
 pubspec.lock
 
 # Directory created by dartdoc
+=======
+# If you're building an application, you may want to check-in your pubspec.lock
+pubspec.lock
+
+# Directory created by dartdoc
+# If you don't generate documentation locally you can remove this line.
+>>>>>>> 591f9cea722396e873f2232955611c0efc0379de
 doc/api/
