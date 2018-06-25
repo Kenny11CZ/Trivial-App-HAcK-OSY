@@ -48,15 +48,14 @@
     </div>
 </form>
 
-<h3>Answers</h3>
+<h3>Odpovědi</h3>
 <div class="answers row">
     <div class="panel-group col-md-6 " id="accordion-good">
+        <h4>Správné</h4>
         <pages-category *ngFor="let category of goodCategories" [category]="category"></pages-category>
     </div>
     <div class="panel-group col-md-6 " id="accordion-bad">
+        <h4>Špatné</h4>
         <pages-category *ngFor="let category of badCategories" [category]="category"></pages-category>
     </div>
-    <!--<ul class="col-md-6 bad">-->
-        <!--<li class="alert alert-danger" *ngFor="let badAnswer of badAnswers">{{badAnswer}}</li>-->
-    <!--</ul>-->
 </div>
